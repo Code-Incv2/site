@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SoftMarket</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JhonaDev139 - Key</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Se usar CSP estrita, libere estes domínios:
+       connect-src 'self' raw.githubusercontent.com cdn.jsdelivr.net api.github.com; -->
 </head>
 <body>
   <header class="top-bar">
-  <div class="left">SoftMarket</div>
-  <div class="right">&#9776;</div> <!-- menu hambúrguer (☰) -->
-</header>
-<script src="script.js"></script>
+    <div class="left">JhonaDev139 - Key</div>
+  </header>
+
+<main class="content">
+  <div class="main-card">
+    <h1 class="main-card-title">Escolha uma opção</h1>
+
+    <!-- Card da Key -->
+<div class="inner-card">
+  <h2>KEY</h2>
+  <button class="btn open-key-btn">Ver Key</button>
+</div>
+    
+<!-- Key box existente escondida inicialmente -->
+<div id="key-container" class="key-box hidden" role="region" aria-label="Área da Key">
+  <h2>Sua Key</h2>
+  <p id="key-text" class="key-text" aria-live="polite">Carregando...</p>
+  <div class="actions">
+    <button id="copy-btn" class="btn" disabled>Copiar Key</button>
+    <button id="reload-btn" class="btn outline">Recarregar</button>
+  </div>
+  <small id="status" class="status" aria-live="polite"></small>
+</div>
+
+    <!-- Card de Informações -->
+    <div class="inner-card">
+      <h2>Informações do Script</h2>
+      <button class="btn open-info-btn">Ver Informações</button>
+    </div>
+  </div>
+</main>
+
+<!-- Pop-up de informações do script -->
+<div id="info-popup" class="popup hidden">
+  <div class="popup-card">
+    <h2>Informações do Script</h2>
+    <p>Teste</p>
+    <button class="btn close-popup-btn">Fechar</button>
+  </div>
+</div>
+
+  <footer class="footer">
+    <p>© 2025 JhonaDev139 — Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-</html>
-
-
+      </html>
